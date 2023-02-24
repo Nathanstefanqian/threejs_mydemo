@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <canvas id="c"></canvas>
+  <div class="my-drawer-layout">
+    <div class="my-drawer-button">
+      <img src="./star.png" alt="star" />
+    </div>
+    <div class="my-drawer">
+      <li>123</li>
+      <li>123</li>
+      <li>123</li>
+      <li>123</li>
+      <li>123</li>
+      <li>123</li>
+    </div>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+
+  <script type="text/javascript">
+    let btn = document.getElementsByClassName('my-drawer-button')
+    let drawer = document.getElementsByClassName('my-drawer-layout')
+    btn[0].onclick = () => drawer[0].classList.toggle('my-drawer-layout-open')
+  </script>
+</body>
+
+</html>

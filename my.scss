@@ -1,0 +1,33 @@
+.my-drawer-layout {
+  display: flex;
+  position: absolute;
+  right: 0;
+  width: 400px;
+  height: 600px;
+  flex-direction: row;
+  transition: all 1s;
+
+  .my-drawer-button {
+    img {
+      width: 40px;
+    }
+  }
+
+  .my-drawer {
+    width: 360px;
+    height: 600px;
+    background-color: rgb(51, 105, 98, 0.2);
+
+    li {
+      list-style: none;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &-open {
+    position: absolute;
+    right: -360px;
+    transition: all ease 1s;
+  }
+}
